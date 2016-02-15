@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   root 'application#index'
   mount APIS::Base => '/api'
   # The priority is based upon order of creation: first created -> highest priority.
