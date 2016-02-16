@@ -9,6 +9,17 @@ module APIS
         version 'v1'
         format :json
 
+        helpers do
+
+          def get_products
+
+            original_products = Product.order(:name).includes(:advertiser).as_json(include: :advertiser)
+
+            return original_products
+          end
+
+        end
+
         # global handler for simple not found case
         rescue_from ActiveRecord::RecordNotFound do |e|
           error_response(message: e.message, status: 404)

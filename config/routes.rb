@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :advertisers
   resources :products
   root 'application#index'
   mount APIS::Base => '/api'
