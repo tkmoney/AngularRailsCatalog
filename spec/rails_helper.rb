@@ -61,3 +61,11 @@ RSpec.configure do |config|
     :file_path => /spec\/api/
   } 
 end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
+
