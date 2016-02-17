@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "advertisers/edit", type: :view do
   before(:each) do
     @advertiser = assign(:advertiser, Advertiser.create!(
-      :name => ""
+      :name => "Test Advertiser"
     ))
   end
 

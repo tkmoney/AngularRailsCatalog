@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :advertiser do
-    name ""
+    name "Test Advertiser"
   end
 end

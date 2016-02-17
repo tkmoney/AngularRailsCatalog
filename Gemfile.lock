@@ -259,6 +259,10 @@ GEM
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
       rspec-mocks (~> 3.4.0)
+    rspec-activemodel-mocks (1.0.3)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      rspec-mocks (>= 2.99, < 4.0)
     rspec-core (3.4.2)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
@@ -372,6 +376,7 @@ DEPENDENCIES
   rails (= 4.2.5.1)
   requirejs-rails
   rspec
+  rspec-activemodel-mocks
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

@@ -8,6 +8,7 @@ RSpec.describe "products/new", type: :view do
       :price => "9.99",
       :advertiser_id => 1
     ))
+    @advertisers = [mock_model(Advertiser)]
   end
 
   it "renders new product form" do
@@ -21,7 +22,7 @@ RSpec.describe "products/new", type: :view do
 
       assert_select "input#product_price[name=?]", "product[price]"
 
-      assert_select "input#product_advertiser_id[name=?]", "product[advertiser_id]"
+      assert_select "select#product_advertiser_id[name=?]", "product[advertiser_id]"
     end
   end
 end

@@ -106,6 +106,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'rspec'
   gem 'rspec-rails' # https://github.com/rspec/rspec-rails
+  gem 'rspec-activemodel-mocks'
   gem 'guard'
   gem 'guard-rspec'
   gem 'shoulda-matchers' # https://github.com/thoughtbot/shoulda-matchers

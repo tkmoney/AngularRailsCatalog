@@ -12,10 +12,11 @@ module APIS
         helpers do
 
           def get_products
+            @products = Product.order(:name).includes(:advertiser).as_json(include: :advertiser)
+          end
 
-            original_products = Product.order(:name).includes(:advertiser).as_json(include: :advertiser)
-
-            return original_products
+          def get_product(id)
+            @products = Product.find(id).as_json(include: :advertiser)
           end
 
         end
