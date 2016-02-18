@@ -14,9 +14,12 @@
 //= require jquery_ujs
 //= require angular
 //= require angular-resource
-//= require restangular
-//= require angular-ui-router
+//= require angular-route
 //= require bootstrap
-//= require services/product
 //= require products_app
-//= require controllers/product
+//= require config
+//= require directives/productDetail
+//= require directives/productList
+//= require controllers/product_list
+//= require controllers/product_detail
+//= require services/product

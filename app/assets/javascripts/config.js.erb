@@ -1,0 +1,11 @@
+productsApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
+	console.log('route provider');
+	$routeProvider.when('/products', {
+		templateUrl: "/assets/views/products.html",
+		controller: 'productListCtrl'
+	}).when('/product/:id',{
+		templateUrl: "/assets/views/product.html",
+		controller: 'productCtrl'
+	}).otherwise({ redirectTo: '/products' });
+
+}]);
