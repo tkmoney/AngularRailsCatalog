@@ -13,10 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require angular
+//= require angular-resource
 //= require restangular
 //= require angular-ui-router
 //= require bootstrap
-//= require products_app
 //= require services/product
+//= require products_app
 //= require controllers/product
-//= require views/product

@@ -4,6 +4,8 @@
 # asset 'bootstrap'# auto generate bower assets
 #
 asset 'angular'
+asset 'angular-resource'
+asset 'angular-route'
 asset 'angular-mocks'
 asset 'restangular'
 asset 'angular-ui-router', '0.2.13'
