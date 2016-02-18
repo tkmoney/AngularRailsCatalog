@@ -202,6 +202,8 @@ GEM
     notiffany (0.0.8)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    pg (0.18.4)
+    pg (0.18.4-x86-mingw32)
     phantomjs (2.1.1.0)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -379,6 +381,7 @@ DEPENDENCIES
   mailcatcher
   meta_request
   modernizr-rails (~> 2.7.1)
+  pg
   quiet_assets
   rails (= 4.2.5.1)
   requirejs-rails
