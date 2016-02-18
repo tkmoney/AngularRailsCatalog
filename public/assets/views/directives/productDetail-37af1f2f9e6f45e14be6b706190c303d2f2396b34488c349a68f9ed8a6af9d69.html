@@ -1,0 +1,6 @@
+<div class="product_detail">
+  <h2><a ng-href="#/product/{{productDetail.id}}">{{ productDetail.name }}</a></h2>
+  <p>description: {{ productDetail.description }}</p>
+  <p>price: {{ productDetail.price | currency }}</p>
+  <p>advertiser: {{productDetail.advertiser.name}}</p>
+</div>
