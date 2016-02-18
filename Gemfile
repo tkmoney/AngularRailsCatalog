@@ -9,10 +9,14 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+
+gem 'coffee-script-source', '1.9.1'
+
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
 
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -86,49 +90,6 @@ gem 'haml'
 # grape api
 gem 'grape-entity'
 gem 'grape'
-# twitter bootstrap
-gem 'bootstrap-sass'
-# auto prefixer
-gem 'autoprefixer-rails'
-# bower dependencies manager for rails
-gem 'bower-rails'
-# modernizr
-gem 'modernizr-rails', '~> 2.7.1'
-# requirejs
-gem 'requirejs-rails'
-# font awesome
-gem 'font-awesome-rails'
 
-group :development, :test do
-  gem 'quiet_assets'
-  gem 'faker' # https://github.com/stympy/faker
-  gem 'factory_girl_rails' # https://github.com/thoughtbot/factory_girl_rails
-  gem 'database_cleaner'
-  gem 'rspec'
-  gem 'rspec-rails' # https://github.com/rspec/rspec-rails
-  gem 'rspec-activemodel-mocks'
-  gem 'guard'
-  gem 'guard-rspec'
-  gem 'shoulda-matchers' # https://github.com/thoughtbot/shoulda-matchers
-  gem 'shoulda-callback-matchers', '~> 1.0'
-  gem 'spring-commands-rspec'
-  gem 'jasmine'
-  gem 'jasmine-rails'
-  gem 'mailcatcher'
-  gem 'did_you_mean', ' ~> 0.10.0'
-  gem 'guard-livereload', require: false
-end
-group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
-  gem 'meta_request'
-end
-group :test do
-  gem 'airborne' # api test
-end
 
-# haml template
-gem 'haml'
-# grape api
-gem 'grape-entity'
-gem 'grape'
+

@@ -24,11 +24,11 @@ RSpec.describe AdvertisersController, type: :controller do
   # Advertiser. As you add validations to Advertiser, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {:name => "Test Advertiser"}
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {:name => nil}
   }
 
   # This should return the minimal set of values that should be in the session
@@ -103,14 +103,14 @@ RSpec.describe AdvertisersController, type: :controller do
   describe "PUT #update" do
     context "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        {:name => "My new advertiser name"}
       }
 
       it "updates the requested advertiser" do
         advertiser = Advertiser.create! valid_attributes
         put :update, {:id => advertiser.to_param, :advertiser => new_attributes}, valid_session
         advertiser.reload
-        skip("Add assertions for updated state")
+        expect(assigns(:advertiser)[:name]).to eq(new_attributes[:name])
       end
 
       it "assigns the requested advertiser as @advertiser" do

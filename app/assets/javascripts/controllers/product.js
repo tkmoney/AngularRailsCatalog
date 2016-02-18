@@ -1,0 +1,3 @@
+productsApp.controller('productCtrl', ['', function(){
+	
+}])

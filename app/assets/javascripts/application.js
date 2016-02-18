@@ -10,4 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require main
+//= require jquery
+//= require jquery_ujs
+//= require angular
+//= require restangular
+//= require angular-ui-router
+//= require bootstrap
+//= require products_app
+//= require services/product
+//= require controllers/product
+//= require views/product

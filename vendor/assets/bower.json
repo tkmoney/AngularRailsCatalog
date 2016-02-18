@@ -1,7 +1,6 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
-    "lodash": "4.3.0",
     "angular": "latest",
     "angular-mocks": "latest",
     "restangular": "latest",

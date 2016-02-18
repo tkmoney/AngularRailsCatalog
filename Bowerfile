@@ -3,7 +3,6 @@
 
 # asset 'bootstrap'# auto generate bower assets
 #
-asset 'lodash', '4.3.0'
 asset 'angular'
 asset 'angular-mocks'
 asset 'restangular'

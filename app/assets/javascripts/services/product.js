@@ -1,0 +1,3 @@
+productsApp.service('productsService', ['', function(){
+	
+}])
