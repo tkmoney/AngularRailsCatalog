@@ -4,7 +4,6 @@ productsApp.controller('productCtrl', ['$scope', 'Product', '$routeParams', func
 
 	Product.atId($scope.productId).$promise.then(function (product) {
 		$scope.product = product;
-		console.log($scope.product);
 	});
 
 }]);
